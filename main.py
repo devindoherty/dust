@@ -3,6 +3,17 @@ import curses
 import time
 import sys
 
+def intro():
+    print ("Dust. A planet of sand and ruin. A desert planet.\n" 
+    "It is the most important planet in the Third Imperium,\n" 
+    "For the sands of Dust are like nothing else in the universe.\n"
+    "You are the new Duke of Dust," 
+    "entrusted by the Emperor to govern the as yet\n" 
+    "ungovernable world and rule in his name.\n"
+    "What ambitions might you have?")
+
+intro()
+
 def menu(root, current_row):
     curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
     height, width = root.getmaxyx()
@@ -54,14 +65,4 @@ def main(root):
 
 curses.wrapper(main)
 
-def intro():
-    print ("Dust. A planet of sand and ruin. A desert planet.\n" 
-    "It is the most important planet in the Third Imperium,\n" 
-    "For the sands of Dust are like nothing else in the universe.\n"
-    "You are the new Duke of Dust," 
-    "entrusted by the Emperor to govern the as yet\n" 
-    "ungovernable world and rule in his name.\n"
-    "What ambitions might you have?")
-
-intro()
-       
+      

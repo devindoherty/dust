@@ -20,7 +20,7 @@ Branching storyline style gameplay. Generally similar starts unless extremes wer
 The planet of Dust is far behind the rest of the Imperium in terms of technology and economic development. The opening of the game sees the player consolidating power over the local barons and lords, either through diplomacy or force. They will also have to manage off planet relationships with the 
 Emperor and other planetary Dukes.
 
-Other factions in play:
+### Factions
 
 - The natives of Dust, known as the Benduin, who live solitary lives of philosophical detachment and scarcity out in the wastes.
 - The Astra, masters of space travel between all the worlds of the Imperium, their massive Lightcrawlers traverse the hyperlanes.
