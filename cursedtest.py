@@ -1,12 +1,16 @@
 import curses
 import time
+import sys
+
+#def intro:
+
 
 def menu(root, current_row):
     curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
 
     height, width = root.getmaxyx()
 
-    menu = [ "Option 1", "Option 2", "Option 3", "Option 4" ]
+    menu = [ "Household", "Council", "Diplomacy", "Warfare", "Intrigue", "Economy"]
 
     for idx, element in enumerate(menu):
         y = height // 2 + idx
@@ -33,17 +37,18 @@ def main(root):
     while True:
         key = root.getch()
 
-        if key == curses.KEY_UP:
+        if key == curses.KEY_UP and current_row > 0:
            current_row -= 1 
         
-        elif key == curses.KEY_DOWN:
+        elif key == curses.KEY_DOWN and current_row < 5:
             current_row += 1
 
         elif key == ord("e"):
-            break
-
+            root.refresh()
+            root.addstr(0, 0, "The Letter E")
+        
         elif key == ord("q"):
-            break
+           break
 
         menu(root, current_row)
 
