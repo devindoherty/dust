@@ -27,8 +27,11 @@ Other factions in play:
 - The Spicing Guild. What many consider to be the true seat of power on Dust. Responsible for the maintenace and extraction of the precious Salt, the most valuable commodity in the Imperium.
 - Imperial Diet, the collection of noble houses which direct the course of the Imperium. The player's house is but one member. The player will have at least one rival house, if not more.
 - The Emperor Hashid al'Aman himself. The 79th ruler of his house, which overthrew the second Imperium a millenium prior.
-- Order of Matrons. An ancient monastic women who are rumored to have a plan for all mankind.
+- Sturmgard. The elite stormtroopers and personal navy of the Emperor.
+- Matrons. An ancient monastic order who are rumored to have a plan for all mankind.
 - Qxz. A secretive technological cult that pushes the boundries of the Imperial Moratorium.
+- Sultan-Kings, the ancient rulers of Dust before the coming of the Imperium. Rumored to exist somewhere out in the wastes.
+- Mutants and Aberrations. When exposed to pure salts over an extended period of time, human beings can become warped by its effects. Some of these effects are in the extreme.
 - Dust Dwellers or Annelids, strange wormlike entities which inhabit the subteranean depths of Dust. It is rumored they have some manner of precognition.
 
 
