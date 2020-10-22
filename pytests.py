@@ -1,4 +1,4 @@
-# Learning python, mostly.
+# Python Learning Lessons
 
 some_var = int(input("Give me a number, any number: "))
 

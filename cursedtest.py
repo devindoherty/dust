@@ -1,3 +1,5 @@
+# Currently merged with main.py
+
 import curses
 import time
 import sys
