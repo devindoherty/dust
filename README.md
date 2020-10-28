@@ -3,7 +3,7 @@ A text based science fiction management game.
 
 Play as the duke of a desert planet in a feudal future as you attempt to navigate the politics and bloodshed of your interstellar fiefdom.
 
-Inspired by Dune, Warsim, Dwarf Fortress,  The King of Dragon Pass, Crusader Kings, and others.
+Inspired by Dune, Warsim, Dwarf Fortress, The King of Dragon Pass, Crusader Kings, and others.
 
 Currently playing around with building the engine in curses.
 
@@ -28,6 +28,7 @@ Emperor and other planetary Dukes.
 - Imperial Diet, the collection of noble houses which direct the course of the Imperium. The player's house is but one member. The player will have at least one rival house, if not more.
 - The Emperor Hashid al'Aman himself. The 79th ruler of his house, which overthrew the second Imperium a millenium prior.
 - Sturmgard. The elite stormtroopers and personal navy of the Emperor.
+- Imperial Navy. The warships of the Third Imperium.
 - Matrons. An ancient monastic order who are rumored to have a plan for all mankind.
 - Qxz. A secretive technological cult that pushes the boundries of the Imperial Moratorium.
 - Sultan-Kings, the ancient rulers of Dust before the coming of the Imperium. Rumored to exist somewhere out in the wastes.
