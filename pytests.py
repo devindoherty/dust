@@ -12,4 +12,4 @@ elif some_var == 10:
 
 some_name = str(input("Hey, what's your name, kid: "))
 
-print("Pleasure to meet ya, " + some_name)
+print("Pleasure to meet ya, numbah, " + some_name)
