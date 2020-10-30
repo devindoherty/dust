@@ -20,13 +20,13 @@ def intro():
            D. Mysterious and distant \n""")
     choice = input(">>> ")
     if choice in answer_a:
-        option_cruel
+        option_cruel()
     elif choice in answer_b:
-        option_fool
+        option_fool()
     elif choice in answer_c:
-        option_noble
+        option_noble()
     elif choice in answer_d:
-        option_strange
+        option_strange()
     else:
         print (required)
         intro()
@@ -36,14 +36,21 @@ def intro():
 def option_cruel():
     print ("Cruelty. Alas.")
     time.sleep(1)
+    intro()
 
 def option_fool():
     print ("A foolish man leads his House astray.")
+    time.sleep(1)
+    intro()
 
 def option_noble():
     print ("He was a paragon of virtue. ")
+    time.sleep(1)
+    intro()      
 
 def option_strange():
     print ("Years often went by without you seeing him.")
+    time.sleep(1)
+    intro()
 
 intro()
