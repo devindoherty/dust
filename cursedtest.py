@@ -48,6 +48,10 @@ def main(root):
         elif key == ord("e"):
             root.refresh()
             root.addstr(0, 0, "The Letter E")
+
+        elif key == ord("z"):
+            root.refresh()
+            root.addstr(0, 0, "The Letter Zed")
         
         elif key == ord("q"):
            break
