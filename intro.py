@@ -14,10 +14,10 @@ def intro():
     print ("You were born on the planet Azad in year 890 of the Third Imperium. "
            "Your father, lord of one of the great interstellar noble Houses, was:")
     time.sleep(1)
-    print ("""A. Merciless and cruel \n
-           B. A fool addicted to salts \n
-           C. Noble, kind, and beloved by all \n
-           D. Mysterious and distant \n""")
+    print ("A. Merciless and cruel\n"
+         "B. A fool addicted to salts\n"
+         "C. Noble, kind, and beloved by all\n"
+         "D. Mysterious and distant\n")
     choice = input(">>> ")
     if choice in answer_a:
         option_cruel()
