@@ -1,64 +1,103 @@
-# Currently merged with main.py
-
 import curses
-import time
-import sys
 
-#def intro:
+def main():
 
 
-def menu(root, current_row):
-    curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
+    """
+    Using the wrapper so it doesn't fuck up our terminal
+    """
 
-    height, width = root.getmaxyx()
+    curses.wrapper(curses_main)
 
-    menu = [ "Household", "Council", "Diplomacy", "Warfare", "Intrigue", "Economy"]
+def curses_main(w):
 
-    for idx, element in enumerate(menu):
-        y = height // 2 + idx
-        x = width // 2 - len(element) // 2 
+    """
+    Called curses_main to emphasize that it's the logical
+    but not actual main function, which is curses.wrapper().
 
-        if idx == current_row:
-            root.attron(curses.color_pair(1))
-            root.addstr(y, x, element)
-            root.attroff(curses.color_pair(1))
+    Calls several other functions for demonstration.
+    """
+    
+    w.addstr("------------\n")
+    w.addstr(" __________ \n")
+    w.addstr("/          \ \n")
+    w.addstr("|  o    o  | \n")
+    w.addstr("|     >    | \n")
+    w.addstr("|    ___   | \n")
+    w.addstr("|          | \n")
+    w.addstr(" \ ______ /  \n")
+    w.refresh()
 
-        else:
-            root.addstr(y, x, element)
+    printing(w)
 
-    root.refresh()
-#   time.sleep(5)
+    moving_and_sleeping(w)
 
-def main(root):
-    curses.curs_set(0)
+    coloring(w)
 
-    current_row = 0
+    w.addstr("\n press any key to exit...")
+    w.refresh()
+    w.getch()
 
-    menu(root, current_row)
+def printing(w):
 
-    while True:
-        key = root.getch()
+    """
+    Some printing demos
+    """
 
-        if key == curses.KEY_UP and current_row > 0:
-           current_row -= 1 
+    w.addstr("This was printed using addstr()\n\n")
+    w.refresh()
+
+    w.addstr("The following letter was printed using addch:-")
+    w.addch('a')
+    w.refresh()
+
+    w.addstr("\n\nThese numbers were printed using addstr:-\n{}\n{:.6f}\n".format(123, 456.789))
+    w.refresh()
+
+def moving_and_sleeping(w):
+
+    """
+    Demonstrates moving the cursor before printing
+    """
+
+    row = 5
+    col = 0
+
+    curses.curs_set(False)
+
+    for c in range(65, 91):
         
-        elif key == curses.KEY_DOWN and current_row < 5:
-            current_row += 1
+        w.addstr(row, col, chr(c))
+        w.refresh()
+        row += 1
+        col += 1
+        curses.napms(100)
 
-        elif key == ord("e"):
-            root.refresh()
-            root.addstr(0, 0, "The Letter E")
+    curses.curs_set(True)
 
-        elif key == ord("z"):
-            root.refresh()
-            root.addstr(0, 0, "The Letter Zed")
+    w.addch('\n')
+
+def coloring(w):
+    
+    """
+    Demo of BG and FG colors.
+    """
+
+    if curses.has_colors():
         
-        elif key == ord("q"):
-           break
+        curses.init_pair(1, curses.COLOR_YELLOW, curses.COLOR_RED)
+        curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_GREEN)
+        curses.init_pair(3, curses.COLOR_MAGENTA, curses.COLOR_CYAN)
 
-        menu(root, current_row)
+        w.addstr("Yellow on red\n\n", curses.color_pair(1))
+        w.refresh()
 
-    root.refresh()
+    else:
+        
+        w.addstr("has_colors() = False\n");
+        w.refresh()
 
 
-curses.wrapper(main)
+main()
+
+
