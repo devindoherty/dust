@@ -5,7 +5,11 @@ Play as the duke of a desert planet in a feudal future as you attempt to navigat
 
 Inspired by Dune, Warsim, Dwarf Fortress, The King of Dragon Pass, Crusader Kings, and others.
 
-Currently playing around with building the engine in curses.
+~~Currently playing around with building the engine in curses.~~
+
+I'm currently playing around with curses with [Curse Quest](github.com/devindoherty/cursequest).
+
+I think I want to do a sort of isometric strategy approach here, because I feel this game is slightly more visual in nature. As in, it would be nice to physically see your house guard or water merchants or what have you move around a physical graphical map. Or at least beyond what the terminal can provide, with sprites.
 
 ## Outline
 
